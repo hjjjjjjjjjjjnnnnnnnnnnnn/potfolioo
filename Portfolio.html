@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easydevv Portfolio</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            height: 100vh;
+            background: linear-gradient(to right, #007bff, #00c6ff);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.5rem;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 123, 255, 0.9);
+            padding: 10px 0;
+            text-align: center;
+            z-index: 10;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffdd40;
+        }
+
+        /* About Section */
+        .about {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        .about p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 50px 20px;
+            background-color: white;
+        }
+        .projects h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #00c6ff;
+            text-align: center;
+        }
+        .project-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .project {
+            width: 300px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project h3 {
+            padding: 15px;
+            font-size: 1.5rem;
+            color: #007bff;
+        }
+        .project p {
+            padding: 0 15px 15px;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 50px 20px;
+            background: linear-gradient(to right, #00c6ff, #007bff);
+            color: white;
+            text-align: center;
+        }
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .contact p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        .contact a {
+            color: #ffdd40;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            background: #333;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Easydevv's Portfolio</h1>
+        <p>Frontend Developer | Web Enthusiast | Problem Solver</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            Hello! I'm Easydevv, a passionate frontend developer with a knack for building modern, responsive, and visually appealing websites. 
+            My goal is to create digital experiences that are both functional and enjoyable for users. Let's build something amazing together!
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                <h3>Project 1: Awesome Calculator</h3>
+                <p>A sleek, interactive calculator built with HTML, CSS, and JavaScript for everyday calculations.</p>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                <h3>Project 2: Portfolio Website</h3>
+                <p>This portfolio website showcases my skills, projects, and creativity as a frontend developer.</p>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                <h3>Project 3: E-commerce Platform</h3>
+                <p>A user-friendly platform for seamless online shopping, complete with a cart and checkout system.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to work together or have any questions, feel free to reach out!</p>
+        <p>Email: <a href="mailto:easydevv@example.com">easydevv@example.com</a></p>
+        <p>Phone: +123 456 7890</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Easydevv. All rights reserved.</p>
+    </footer>
+</body>
+</html>
